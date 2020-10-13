@@ -88,8 +88,10 @@ This homework is graded based on the following criteria:
 You are required to submit BOTH of the following for review:
 
 * The URL of the functional, deployed application.
+https://gamezsal.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+https://github.com/gamezsal/05-Third-Party-APIs-Work-Day-Scheduler
 
 - - -
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
