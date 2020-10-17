@@ -69,3 +69,11 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+ @media screen and (max-width: 750px) {
+  
+  .saveBtn {
+    height: 40px;
+  }
+}
