@@ -36,11 +36,26 @@ function currentDate(){
     var cDate = moment().format('dddd, MMM Do');
     $("#currentDay").text(cDate);
 }
-
+//localStorage data
+function storePlannerData(){
+    localStorage.setItem("dPlanner", JSON.stringify(workDayPlanner));
+}
 // localStorage Data
-function setPlannerInfo() {
+function plannerDataDisplay() {
     dPlanner.forEach(function (hour) {
         $("#" + hour.id).val(hour.dPlanner)
         
     });
 };
+
+//Load Data
+function dataLoader(){
+    var dataLoad = JSON.parse(localStorage.getItem("dPlanner"));
+    if(dataLoad){
+        dPlanner = dataLoad;
+    }
+}
+
+
+//data load function
+function
