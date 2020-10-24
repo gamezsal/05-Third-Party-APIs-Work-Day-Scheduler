@@ -14,13 +14,13 @@ for (time = 9; time <= 17; time++) {
   } else if (time > 12) {
     dHour = time - 12;
     ampm = "pm";
-  } else if (time > 12) {
+  } else if (time < 12) {
     dHour = time;
     ampm = "am";
   }
   dHour = dHour.toString();
 
-  var dataPlanner = {
+  dataPlanner = {
     id: id,
     dHour: dHour,
     time: time,
@@ -31,7 +31,7 @@ for (time = 9; time <= 17; time++) {
 }
 //current Day Header
 function currentDate() {
-  var cDate = moment().format("dddd, MMM Do");
+  var cDate = moment().format("dddd, MMMM Do");
   $("#currentDay").text(cDate);
 }
 //localStorage store data
@@ -47,7 +47,7 @@ function plannerDataDisplay() {
 
 //Load Data
 function dataLoader() {
-  var dataLoad = JSON.parse(localStorage.getItem("dPlanner"));
+  var dataLoad = JSON.parse(localStorage.getItem("dayPlanner"));
   if (dataLoad) {
     workDayPlanner = dataLoad;
   }
